@@ -14,8 +14,17 @@
   ** 도망갈 때 효과음은 MouEnter, 잡았을 때 효과음은 Click 에 써야함. **
   
 - 3단계 코드의 실행 스크린샷
-- 
+  1. 점수 계산 (버튼 클릭하면 +100, 놓치면 -10)
+     <img width="357" height="83" alt="스크린샷 2026-03-12 130733" src="https://github.com/user-attachments/assets/dcfffc0b-4735-4363-9826-1a07b0feca2b" />
+
+  2. 난이도 조절 ( 버튼 크기 10%씩 축소)
+     <img width="796" height="495" alt="스크린샷 2026-03-12 130554" src="https://github.com/user-attachments/assets/b40661c6-0516-4f41-8754-90ccbb335168" />
+
 - 4단계 코드의 실행 스크린샷
+  1. 게임오버 출력, 모든 버튼 비활성화 처리
+     <img width="801" height="501" alt="스크린샷 2026-03-12 130831" src="https://github.com/user-attachments/assets/a838457d-a966-49b3-98a9-7b9459c1178a" />
+  2. '다시 시작' 버튼 구현 ( 점수+놓친횟수 초기화, 게임 다시 시작 )
+     <img width="791" height="496" alt="스크린샷 2026-03-12 130945" src="https://github.com/user-attachments/assets/893027de-54c2-43b8-9add-b9111af5c3f3" />
 
 
 ## 기능
