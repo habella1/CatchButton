@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             ButtonRun = new Button();
+            ButtonReset = new Button();
             SuspendLayout();
             // 
             // ButtonRun
@@ -44,11 +45,24 @@
             ButtonRun.Click += button1_Click;
             ButtonRun.MouseEnter += button1_MouseEnter;
             // 
+            // ButtonReset
+            // 
+            ButtonReset.BackColor = Color.FromArgb(255, 192, 192);
+            ButtonReset.Font = new Font("문체부 쓰기 정체", 9F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            ButtonReset.Location = new Point(643, 384);
+            ButtonReset.Name = "ButtonReset";
+            ButtonReset.Size = new Size(158, 66);
+            ButtonReset.TabIndex = 1;
+            ButtonReset.Text = "다시 시작";
+            ButtonReset.UseVisualStyleBackColor = false;
+            ButtonReset.Click += ButtonReset_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ButtonReset);
             Controls.Add(ButtonRun);
             Name = "Form1";
             Text = "Form1";
@@ -58,5 +72,6 @@
         #endregion
 
         private Button ButtonRun;
+        private Button ButtonReset;
     }
 }
