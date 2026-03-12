@@ -1,4 +1,5 @@
 using System.Security.Cryptography.Xml;
+using System.Media; //효과음
 
 namespace CatchButton
 {
@@ -12,11 +13,17 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // 잡았을 때 효과음
+            SystemSounds.Asterisk.Play();
 
+            // 메시지 박스
+            MessageBox.Show("축하합니다~!");
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
+            // *1단계 - 기본 도망 기능
+
             //난수 생성기
             Random rd = new Random();
 
@@ -42,6 +49,11 @@ namespace CatchButton
 
             //좌표 출력
             this.Text = "버튼 위치 (" + x + ", " + y + ")";
+
+            // *2단계 - 도망갈 때 효과음
+            SystemSounds.Beep.Play();
+
+
         }
     }
 }
