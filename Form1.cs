@@ -5,6 +5,9 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        //3단계 - 점수 계산 변수
+        int score = 0;
+        Random rand = new Random();
 
         public Form1()
         {
@@ -13,11 +16,20 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
+            score += 100; // 버튼 잡았을 때 점수 증가
+
+            //크기 10%씩 감소
+            ButtonRun.Width = (int)(ButtonRun.Width * 0.9);
+            ButtonRun.Height = (int)(ButtonRun.Height * 0.9);
+
             // 잡았을 때 효과음
             SystemSounds.Asterisk.Play();
 
             // 메시지 박스
             MessageBox.Show("축하합니다~!");
+
+            //점수 출력
+            this.Text = "점수 : " + score;
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -46,6 +58,9 @@ namespace CatchButton
 
             //버튼 위치 이동
             ButtonRun.Location = new Point(x, y);
+
+            //3단계
+            score -= 10;
 
             //좌표 출력
             this.Text = "버튼 위치 (" + x + ", " + y + ")";
