@@ -52,7 +52,6 @@ namespace CatchButton
 
             // *2단계 - 도망갈 때 효과음
             SystemSounds.Beep.Play();
-
         }
     }
 }
