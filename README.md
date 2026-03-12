@@ -5,9 +5,14 @@
 ## 실행 화면
 - 1단계 코드의 실행 스크린샷
   <img width="793" height="501" alt="스크린샷 2026-03-12 113927" src="https://github.com/user-attachments/assets/d900fbc2-bede-41e9-8819-500c65588f14" />
-
+  [MouseEnter] 난수 생성 -> 최대 이동 가능 좌표 계산 -> Point 객체 생성 -> 랜덤 좌표 생성 -> 버튼 위치 이동 -> 폼 제목에 현재 좌표 출력
+  
 - 2단계 코드의 실행 스크린샷
-- 
+  <img width="803" height="554" alt="스크린샷 2026-03-12 115335" src="https://github.com/user-attachments/assets/e4698b26-cdaf-485a-b61b-3b368fa17c24" />
+  [Click] using System.Media;추가 -> 잡았을 때 효과음 추가 + 메시지 박스 출력
+  
+  ** 도망갈 때 효과음은 MouEnter, 잡았을 때 효과음은 Click 에 써야함. **
+  
 - 3단계 코드의 실행 스크린샷
 - 
 - 4단계 코드의 실행 스크린샷
